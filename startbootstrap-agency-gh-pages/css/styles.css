@@ -173,6 +173,24 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%;
+}
+
+.carousel-slide {
+  flex: 1 0 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
 
 ol ol,
 ul ul,
@@ -1144,9 +1162,9 @@ progress {
     flex: 0 0 auto;
     width: 25%;
   }
-
+/*icon amarelo de serviços*/
   .col-md-4 {
-    flex: 0 0 auto;
+    flex: auto;
     width: 33.33333333%;
   }
 
@@ -11430,89 +11448,6 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-#portfolio .portfolio-item {
-  max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 200, 0, 0.9);
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25rem;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-.portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-.portfolio-modal .modal-content p.item-intro {
-  font-style: italic;
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  background-color: transparent;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
 
 .timeline {
   position: relative;
@@ -11688,13 +11623,15 @@ header.masthead .masthead-heading {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
 
+}
+/*fora da imagem dos integrantes*/
 .container .box {
   position: relative;
   width: 30rem;
   height: 30rem;
   margin: 4rem;
+
 }
 
 .container .box:hover .imgBox {
@@ -11709,25 +11646,26 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   z-index: 2;
   transition: all 0.5s ease-in-out;
 }
-
+/*contorno Imagem dos integrantes*/
 .imgBox img {
-  width: 30rem;
-  height: 30rem;
+  width: 27rem;
+  height: 27rem;
   object-fit: cover;
   resize: both;
+  border-radius: 5%;
 }
 
 .content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -11736,6 +11674,7 @@ header.masthead .masthead-heading {
   align-items: flex-end;
   text-align: center;
   transition: 0.5s ease-in-out;
+  border-radius: 5%;
 }
 
 .content h2 {
