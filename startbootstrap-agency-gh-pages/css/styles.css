@@ -65,6 +65,7 @@
   }
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11653,8 +11654,8 @@ header.masthead .masthead-heading {
 }
 /*contorno Imagem dos integrantes*/
 .imgBox img {
-  width: 27rem;
-  height: 27rem;
+  width: 29rem;
+  height: 29rem;
   object-fit: cover;
   resize: both;
   border-radius: 5%;
@@ -11664,8 +11665,8 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   padding: 1.5rem;
   display: flex;
   justify-content: center;

@@ -25,10 +25,11 @@
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
+                <!-- BOTÃO DE DOWNLOAD -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <a href="https://github.com/samuelcursino/TCC-Art.Me" download>
-                        <button style="padding: 5px 15px; background-color: #d8b829; color: black; border: none; cursor: pointer; align-items: center">
-                          Baixe o App
+                        <button style="padding: 5px 15px; background-color: #f1be31; color: black; border: none; cursor: pointer; align-items: center; border-radius: 6cm;">
+                          Baixe o App 
                         </button>
                       </a>
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -40,30 +41,31 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- TELA DE APRESENTAÇÃO/FUNDO ARTME-->
+        
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Faça sua arte voar alto com Art.Me!</div>
-
+                <div class="masthead-subheading" style="font-family:Georgia, 'Footlight MT Light', Times, serif ; color: white;">Faça sua arte voar alto com Art.Me! <img src="../startbootstrap-agency-gh-pages/assets/img/imgcllzr.png" alt="" style="width: 25%; height: 25%; margin-left: 6%; "></div>
             </div>
         </header>
         
-        <!-- Services-->
+        <!-- SERVIÇOS-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Serviços</h2>
                     <h3 class="section-subheading text-muted">Entenda os benefícios do nosso App.</h3>
                 </div>
-                <!--botões amarelos dos serviços-->
+                <!--BOTÕES DE SERVIÇO-->
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Compra e venda</h4>
-                        <p class="text-muted">Aqui você pode comprar serviços de pessoas talentosas, assim com tambèm pode oferecer os seus</p>
+                        
+                        <h4 class="my-3">Contratação</h4>
+                        <p class="text-muted">Aqui você pode contratar serviços de pessoas talentosas, assim com tambèm pode oferecer os seus! </p>
                     </div>
                    <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -76,26 +78,28 @@
                 </div>
             </div>
         </section>
-
-        <!-- About-->
+        
+        <!-- SOBRE O NOSSO APP-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Sobre</h2>
                     <h3 class="section-subheading text-muted">Vamos entender um pouco mais sobre o Art.Me?</h3>
                 </div>
+                 
                 <br>
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/como.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-        
+                             <!-- COMO SURGIU-->
                                 <h4 class="subheading">Como Surgiu</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Com o propósito de ampliar o mercado para os artistas, resolvemos desenvolver um projeto para que facilite o contato e o reconhecimento de artistas autônomos</p></div>
                         </div>
                     </li>
+                    <!-- COMO FUNCIONA-->
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/funciona.png" alt="..." /></div>
                         <div class="timeline-panel">
@@ -105,17 +109,28 @@
                             <div class="timeline-body"><p class="text-muted"> Após o usuário baixar o App e criar a sua conta, será possível tanto que ele veja os trabalhos de outros artistas, quanto que ele publique o seu trabalho no seu perfil. O usuário pode colocar suas informações na sua bio.</p></div>
                         </div>
                     </li>
+                    <!--FAIXA ETÁRIA PARA O APP-->
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/idade.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Faixa etaria?</h4>
+                                <h4>Faixa etaria</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">É exigido que o usuário seja acima de 18 anos, para que haja a segurança para ambos os lados (cliente e o artista) </p></div>
                         </div>
                     </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/ferramentaimg.png" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Ferramentas de Desenvolvimento</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> O app foi desenvolvido em JavaScript, React Native como framework, MSQL para amarzenar os dados dos usuários e o Android Studio para executar o App.</p></div>
+                        </div>
+                    </li>
                     
         </section>
+        
         <!--Sobre o nosso time-->
         <section class="page-section bg-light" id="team">
         <div class="container">
@@ -123,6 +138,7 @@
                 <h2 class="section-heading text-uppercase">Time de Desenvolvimento</h2>
                 <br> <br>
             </div>
+            <!-- CARD DO MATHEUS-->
         <div class="container">
             
             <div class="box">
@@ -135,9 +151,10 @@
                     <a class="btn btn-dark btn-social mx-2" href="https://github.com/Mateus046" aria-label="Larry Parker Github Profile"><i class="fab fa-github"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/mateussilvasocial" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                     <h2>Matheus Silva</br>
-                 <span>Scrum Master</span></h2> 
+                 <span>Front-end Developer</span></h2> 
                 </div>
             </div>
+            <!--CARD DO LUCAS-->
             <div class="box">
                 
                 <div class="imgBox">
@@ -147,36 +164,38 @@
                     <a class="btn btn-dark btn-social mx-2" href="https://github.com/lucas1375" aria-label="Larry Parker Github Profile"><i class="fab fa-github"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/mwlite/in/lucas-santos-4450a4231" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                     <h2>Lucas Santos</br>
-                    <span>Banco de dados</span></h2> 
+                    <span>Database</span></h2> 
                     
                 </div>
             </div>
+            <!--CARD DA MENDES-->
             <div class="container">
             
                 <div class="box">
                     
                     <div class="imgBox ">      
-                <img src="assets/img/team/Fabiana.jfif" alt="">
+                <img src="assets/img/team/FabianaM.jpg" alt="">
                     </div>
                     
                     <div class="content">
                         <a class="btn btn-dark btn-social mx-2" href="https://github.com/FabiMendes" aria-label="Larry Parker Github Profile"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/fabiana-mendes-786998265/" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         <h2>Fabi Mendes</br>
-                     <span>Front-end</span></h2> 
+                     <span>Web Designer</span></h2> 
                     </div>
                 </div>
+                <!--CARD DO SAMUEL-->
                 <div class="box">
                     
                     <div class="imgBox">
-                        <img src="assets/img/team/samuel.jfif" alt="">
+                        <img src="assets/img/team/Samuel.jpg" alt="">
                     </div>
                     <div class="content">
                         <a class="btn btn-dark btn-social mx-2" href="https://github.com/samuelcursino" aria-label="Larry Parker Github Profile"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/samuel-cursino-a77007231" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         <br>
                         <h2>Samu Cursino</br>
-                        <span>Back-end</span></h2> 
+                        <span>Fullstack Developer</span></h2> 
                         
                     </div>
                 </div>
